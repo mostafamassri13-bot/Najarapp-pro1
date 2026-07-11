@@ -1,7 +1,6 @@
 workflows:
   android-debug:
     name: Android Debug Build
-    working_directory: my_app
     environment:
       flutter: stable
     scripts:
