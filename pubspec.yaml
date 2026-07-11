@@ -1,0 +1,14 @@
+workflows:
+  android-debug:
+    name: Android Debug Build
+    working_directory: my_app  # قم بتغيير my_app لاسم المجلد الذي يحتوي على ملف pubspec.yaml
+    environment:
+      flutter: stable
+    scripts:
+      - name: Get Flutter packages
+        script: flutter pub get
+      - name: Build APK
+        script: flutter build apk --debug
+    artifacts:
+      - build/app/outputs/flutter-apk/app-debug.apk
+
