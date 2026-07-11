@@ -12,3 +12,5 @@ workflows:
     artifacts:
       - build/app/outputs/flutter-apk/app-debug.apk
 
+environment:
+  sdk: '>=3.0.0 <4.0.0'
